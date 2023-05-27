@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <section className='maxW py-20'>
+    <section className='maxW py-20 mb-24'>
       <h3
         className='uppercase text-7xl font-extrabold text-center tracking-widest '
         data-aos='fade-down'
