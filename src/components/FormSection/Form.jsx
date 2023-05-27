@@ -8,7 +8,11 @@ const Form = () => {
     reset();
   };
   return (
-    <div className='z-10 max-w-3xl mx-auto bg-[#147944] p-5 mt-10 rounded'>
+    <div
+      className='z-10 max-w-3xl mx-auto bg-[#147944] p-5 mt-10 rounded'
+      data-aos='zoom-in'
+      data-aos-easing='linear'
+      data-aos-duration='1500'>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className='grid lg:grid-cols-2 grid-cols-1 md:gap-5 gap-3'>
@@ -82,7 +86,7 @@ const Form = () => {
         <div className='flex justify-center col-span-2'>
           <input
             type='submit'
-            className='px-8 py-3 font-semibold rounded bg-gray-100 cursor-pointer'
+            className='px-8 py-3 font-semibold rounded bg-gray-100 cursor-pointer hover:bg-[#084a42] hover:text-white hover:shadow-2xl hover:scale-105 duration-300 ease-linear hover:-translate-y-1 uppercase tracking-widest'
             value='Submit'
           />
         </div>

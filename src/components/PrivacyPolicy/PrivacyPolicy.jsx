@@ -3,10 +3,16 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <section className='maxW py-20'>
-      <h3 className='uppercase text-7xl font-extrabold text-center tracking-widest '>
+      <h3
+        className='uppercase text-7xl font-extrabold text-center tracking-widest '
+        data-aos='fade-down'
+        data-aos-duration='500'>
         Privacy policy
       </h3>
-      <p className='font-medium max-w-5xl mx-auto text-center'>
+      <p
+        className='font-medium max-w-5xl mx-auto text-center'
+        data-aos='fade-down'
+        data-aos-duration='700'>
         Wir legen großen Wert auf den Schutz Ihrer persönlichen Daten.
         Nachfolgend informieren wir Sie darüber, welche Daten während Ihres
         Besuchs auf unserer Website erfasst und wie diese genutzt werden. Bitte
@@ -15,7 +21,11 @@ const PrivacyPolicy = () => {
       </p>
 
       <div className='grid gap-10 md:gap-8 sm:p-3 md:grid-cols-2 lg:px-12 xl:px-32 mt-10'>
-        <div>
+        <div
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='500'>
           <h3 className='font-semibold text-lg'>1. Verantwortliche Stelle:</h3>
           <p className='mt-1 text-gray-700'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
@@ -25,7 +35,11 @@ const PrivacyPolicy = () => {
           </p>
         </div>
 
-        <div>
+        <div
+          data-aos='fade-left'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='500'>
           <h3 className='font-semibold text-lg'>2.Datensicherheit:</h3>
           <p className='mt-1 text-gray-700'>
             Wir setzen technische und organisatorische Maßnahmen ein, um Ihre
@@ -36,10 +50,16 @@ const PrivacyPolicy = () => {
           </p>
         </div>
         <div className='col-span-2'>
-          <h3 className='font-semibold text-lg'>
+          <h3
+            className='font-semibold text-lg'
+            data-aos='fade-up'
+            data-aos-duration='500'>
             3.Datenerfassung und -verwendung:
           </h3>
-          <p className='mt-1 text-gray-700 mb-3'>
+          <p
+            className='mt-1 text-gray-700 mb-3'
+            data-aos='fade-up'
+            data-aos-duration='700'>
             <span className='font-bold'> A)</span> Protokolldaten: Bei jedem
             Zugriff auf unsere Website werden automatisch Informationen durch
             Ihren Browser an unseren Server übermittelt und in Protokolldateien
@@ -50,7 +70,10 @@ const PrivacyPolicy = () => {
             Betriebs unserer Website und werden nach einer statistischen
             Auswertung gelöscht.
           </p>
-          <p className='mt-1 text-gray-700 mb-3'>
+          <p
+            className='mt-1 text-gray-700 mb-3'
+            data-aos='fade-up'
+            data-aos-duration='900'>
             <span className='font-bold'> B)</span> Cookies: Unsere Website
             verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern und
             bestimmte Funktionen bereitzustellen. Cookies sind kleine
@@ -60,7 +83,10 @@ const PrivacyPolicy = () => {
             Browsereinstellungen deaktivieren, allerdings können dadurch einige
             Funktionen unserer Website beeinträchtigt werden.
           </p>
-          <p className='mt-1 text-gray-700 mb-3'>
+          <p
+            className='mt-1 text-gray-700 mb-3'
+            data-aos='fade-up'
+            data-aos-duration='1100'>
             <span className='font-bold'> C)</span> Kontaktaufnahme: Wenn Sie uns
             per E-Mail oder über unser Kontaktformular kontaktieren, werden die
             von Ihnen angegebenen Daten (wie z.B. Name, E-Mail-Adresse,
@@ -69,7 +95,11 @@ const PrivacyPolicy = () => {
             behandelt und nicht ohne Ihre Einwilligung an Dritte weitergegeben
           </p>
         </div>
-        <div>
+        <div
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='500'>
           <h3 className='font-semibold text-lg'>
             4.Links zu anderen Websites:
           </h3>
@@ -81,7 +111,11 @@ const PrivacyPolicy = () => {
             dieser Websites zu lesen
           </p>
         </div>
-        <div>
+        <div
+          data-aos='fade-left'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='500'>
           <h3 className='font-semibold text-lg'>5.Ihre Rechte:</h3>
           <p className='mt-1 text-gray-700'>
             Sie haben das Recht, Auskunft über die von uns über Sie

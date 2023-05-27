@@ -3,19 +3,27 @@ import sideimg from "../../assets/images/sideimg.png";
 import page from "../../assets/images/page.webp";
 const ExamplesSection = () => {
   return (
-    <section className='max-w-[1920px] mx-auto relative mt-24 mb-36'>
+    <section className='max-w-[1920px] mx-auto relative mt-24 mb-36 '>
       {/* side img */}
-      <div className='absolute -top-40 left-0 w-1/3 -z-10'>
+      <div
+        className='absolute -top-40 left-0 w-1/3 -z-10'
+        data-aos='fade-right'>
         <img className='w-full' src={sideimg} alt='' />
       </div>
-      <div className='maxW'>
-        <h3 className='uppercase text-7xl font-extrabold text-center tracking-widest'>
+      <div className='maxW overflow-x-hidden'>
+        <h3
+          className='uppercase text-7xl font-extrabold text-center tracking-widest'
+          data-aos='fade-left'>
           examples
         </h3>
 
-        <div className='mt-28 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 '>
+        <div className='mt-28 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 overflow-hidden'>
           {/* First Card */}
-          <div className='flex flex-col items-center p-4 text-center'>
+          <div
+            className='flex flex-col items-center p-4 text-center'
+            data-aos='fade-right'
+            data-aos-duration='500'
+            data-aos-easing='ease-in-sine'>
             <div className='mb-5'>
               <h5 className='my-3 text-3xl font-bold uppercase'>First:</h5>
               <p className='capitalize text-xl font-semibold'>
@@ -37,7 +45,11 @@ const ExamplesSection = () => {
           </div>
 
           {/* second card */}
-          <div className='pageBg flex flex-col items-center justify-center p-4 text-center'>
+          <div
+            className='pageBg flex flex-col items-center justify-center p-4 text-center'
+            data-aos='fade-up'
+            data-aos-duration='500'
+            data-aos-easing='ease-in-sine'>
             <div className='mb-2'>
               <p className='uppercase font-semibold text-lg'>what</p>
               <p className='uppercase font-semibold text-lg px-5'>
@@ -59,7 +71,11 @@ const ExamplesSection = () => {
           </div>
 
           {/* Third Card */}
-          <div className='pageBg flex flex-col items-center justify-center p-4 text-center'>
+          <div
+            className='pageBg flex flex-col items-center justify-center p-4 text-center'
+            data-aos='fade-left'
+            data-aos-duration='500'
+            data-aos-easing='ease-in-sine'>
             <div className='mb-2'>
               <p className='uppercase font-semibold text-lg'>what</p>
               <p className='uppercase font-semibold text-lg px-5'>
