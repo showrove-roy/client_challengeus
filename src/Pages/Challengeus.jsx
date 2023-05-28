@@ -13,7 +13,7 @@ import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
 
 const Challengeus = () => {
   return (
-    <main className="overflow-hidden">
+    <main className='overflow-hidden'>
       {/* Hero section  */}
       <HeroSection />
 
