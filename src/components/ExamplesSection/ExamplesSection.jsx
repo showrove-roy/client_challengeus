@@ -17,7 +17,6 @@ const ExamplesSection = () => {
         scrollTrigger: {
           trigger: zoomOut.current,
           pin: true,
-          // markers: true,
           start: "top 70%",
           end: `+=${innerHeight * 1.3}`,
           scrub: 3,
@@ -33,7 +32,7 @@ const ExamplesSection = () => {
       const text = self.selector(".titleX");
       gsap.fromTo(
         text,
-        { x: 700, opacity: 0 ,scale: 0.1},
+        { x: 700, opacity: 0, scale: 0.1 },
         {
           x: 0,
           opacity: 1,
@@ -41,19 +40,18 @@ const ExamplesSection = () => {
           duration: 10,
           scrollTrigger: {
             trigger: text,
-            markers: true,
             start: "bottom bottom",
             end: "top top",
-            scrub: 3,  
+            scrub: 3,
           },
         }
       );
-    }, zoomOut); // <- Scope!
-    return () => ctx.revert(); // <- Cleanup!
+    }, zoomOut);
+    return () => ctx.revert();
   }, []);
   return (
     <section
-      className='max-w-[1920px] mx-auto relative mt-24 mb-36'
+      className='max-w-[1920px] mx-auto relative mt-24 mb-36 z-10 bg-white'
       ref={zoomOut}>
       {/* side img */}
       <div className='absolute -top-40 left-0 w-1/3 -z-50 sideImg'>

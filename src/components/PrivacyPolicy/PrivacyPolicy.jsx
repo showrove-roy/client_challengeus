@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const PrivacyPolicy = () => {
+  //   Zoom out
+  const zoomOut = useRef(null);
+  const { innerHeight } = window;
+  useLayoutEffect(() => {
+    const ctx = gsap.context((self) => {
+      const titleOut = self.selector(".titleOut");
+      gsap.from(titleOut, {
+        scale: 50,
+        stagger: 0.25,
+        duration: 2,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: zoomOut.current,
+          pin: titleOut,
+          start: "top top",
+          end: `+=${innerHeight * 1.2}`,
+          scrub: 2,
+        },
+      });
+    }, zoomOut);
+    return () => ctx.revert();
+  }, []);
   return (
-    <section className='maxW py-20 mb-24'>
-      <h3
-        className='uppercase text-7xl font-extrabold text-center tracking-widest '
-        data-aos='fade-down'
-        data-aos-duration='500'>
+    <section className='maxW py-20 mb-24 overflow-hidden -z-30' ref={zoomOut}>
+      <h3 className='uppercase text-7xl font-extrabold text-center tracking-widest titleOut'>
         Privacy policy
       </h3>
       <p

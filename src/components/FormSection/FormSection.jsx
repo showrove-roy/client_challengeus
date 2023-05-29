@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 import sideimg2 from "../../assets/images/sideimg2.webp";
 import Form from "./Form";
 
 const FormSection = () => {
+  //   Zoom out
+  const zoomOut = useRef(null);
+  const { innerHeight } = window;
+  useLayoutEffect(() => {
+    const ctx = gsap.context((self) => {
+      const titleOut = self.selector(".titleOut");
+      gsap.from(titleOut, {
+        scale: 50,
+        stagger: 0.25,
+        duration: 2,
+        scrollTrigger: {
+          trigger: zoomOut.current,
+          pin: titleOut,
+          start :"top 30%", 
+          end: `+=${innerHeight * 1.2}`,
+          scrub: 2,
+        },
+      });
+    }, zoomOut);
+    return () => ctx.revert();
+  }, []);
   return (
-    <section className='relative overflow-hidden pt-20 pb-28'>
+    <section className='relative overflow-hidden pt-20 pb-28 -z-10' ref={zoomOut}>
       <img
         className='absolute -z-10 rotate-[135deg] -top-[12%] -left-[17%] max-w-3xl'
         src={sideimg2}
@@ -28,8 +52,7 @@ const FormSection = () => {
 
       <div className='maxW '>
         <h3
-          className='uppercase text-7xl font-extrabold text-center tracking-widest'
-          data-aos='zoom-out-down'>
+          className='uppercase text-7xl font-extrabold text-center tracking-widest titleOut'>
           the <br /> challenge
         </h3>
 
