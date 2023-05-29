@@ -1,19 +1,66 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 import sideimg from "../../assets/images/sideimg.png";
-import page from "../../assets/images/page.webp";
 const ExamplesSection = () => {
+  //   Zoom out
+  const zoomOut = useRef(null);
+  const { innerHeight } = window;
+  useLayoutEffect(() => {
+    const ctx = gsap.context((self) => {
+      const titleOut = self.selector(".sideImg");
+      gsap.from(titleOut, {
+        scale: 100,
+        stagger: 0.25,
+        duration: 5,
+        scrollTrigger: {
+          trigger: zoomOut.current,
+          pin: true,
+          // markers: true,
+          start: "top 70%",
+          end: `+=${innerHeight * 1.3}`,
+          scrub: 3,
+        },
+      });
+    }, zoomOut);
+    return () => ctx.revert();
+  }, []);
+
+  // title entry
+  useLayoutEffect(() => {
+    const ctx = gsap.context((self) => {
+      const text = self.selector(".titleX");
+      gsap.fromTo(
+        text,
+        { x: 700, opacity: 0 ,scale: 0.1},
+        {
+          x: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 10,
+          scrollTrigger: {
+            trigger: text,
+            markers: true,
+            start: "bottom bottom",
+            end: "top top",
+            scrub: 3,  
+          },
+        }
+      );
+    }, zoomOut); // <- Scope!
+    return () => ctx.revert(); // <- Cleanup!
+  }, []);
   return (
-    <section className='max-w-[1920px] mx-auto relative mt-24 mb-36 '>
+    <section
+      className='max-w-[1920px] mx-auto relative mt-24 mb-36'
+      ref={zoomOut}>
       {/* side img */}
-      <div
-        className='absolute -top-40 left-0 w-1/3 -z-10'
-        data-aos='fade-right'>
+      <div className='absolute -top-40 left-0 w-1/3 -z-50 sideImg'>
         <img className='w-full' src={sideimg} alt='' />
       </div>
       <div className='maxW overflow-x-hidden'>
-        <h3
-          className='uppercase text-7xl font-extrabold text-center tracking-widest'
-          data-aos='fade-left'>
+        <h3 className='uppercase text-7xl font-extrabold text-center tracking-widest titleX'>
           examples
         </h3>
 
