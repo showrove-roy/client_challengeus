@@ -11,13 +11,12 @@ const HeroSection = () => {
     const ctx = gsap.context((self) => {
       const titleIn = self.selector(".titleIn");
       gsap.to(titleIn, {
-        scale: 3,
+        scale: 4,
         stagger: 0.25,
         duration: 5,
         scrollTrigger: {
           trigger: zoomIn.current,
           pin: true,
-         
           end: `+=${innerHeight * 1.3}`,
           scrub: 3,
         },
@@ -26,17 +25,16 @@ const HeroSection = () => {
     return () => ctx.revert();
   }, []);
 
-
-  useLayoutEffect(()=>{
+  useLayoutEffect(() => {
     ScrollTrigger.create({
-      trigger: '.heroBg',
-      duration: 3,
-      animation: gsap.fromTo('.heroBg',{scale: 1}, {scale: 1.5}),
-      start: 'bottom top',
-      end: 'bottom bottom',
-      scrub: 3,
-    })
-  },[])
+      trigger: ".heroBg",
+      duration: 2,
+      animation: gsap.fromTo(".heroBg", { scale: 1 }, { scale: 1.5 }),
+      start: "bottom top",
+      end: "bottom bottom",
+      scrub:2,
+    });
+  }, []);
 
   return (
     <section
