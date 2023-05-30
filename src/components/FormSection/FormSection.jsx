@@ -13,13 +13,14 @@ const FormSection = () => {
     const ctx = gsap.context((self) => {
       const titleOut = self.selector(".titleOut");
       gsap.from(titleOut, {
-        scale: 50,
+        scale: 20,
         stagger: 0.25,
         duration: 2,
+        opacity:0,
         scrollTrigger: {
           trigger: zoomOut.current,
           pin: titleOut,
-          start :"top 30%", 
+          start :"top 10%", 
           end: `+=${innerHeight * 1.2}`,
           scrub: 2,
         },
