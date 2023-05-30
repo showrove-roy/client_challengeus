@@ -9,10 +9,10 @@ const Form = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_km78jzd",
-        "template_7yb38hf",
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
         form.current,
-        "V6nSayB_P4EsccFXj"
+        "YOUR_PUBLIC_KEY"
       )
       .then(
         (result) => {
