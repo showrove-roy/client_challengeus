@@ -29,7 +29,7 @@ const FormSection = () => {
     return () => ctx.revert();
   }, []);
   return (
-    <section className='relative overflow-hidden pt-20 pb-28 -z-10' ref={zoomOut}>
+    <section className='relative overflow-hidden pt-20 pb-28' ref={zoomOut}>
       <img
         className='absolute -z-10 rotate-[135deg] -top-[12%] -left-[17%] max-w-3xl'
         src={sideimg2}

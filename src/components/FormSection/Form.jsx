@@ -1,20 +1,43 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import swal from "sweetalert";
 
 const Form = () => {
-  const { register, handleSubmit, reset } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-    reset();
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_km78jzd",
+        "template_7yb38hf",
+        form.current,
+        "V6nSayB_P4EsccFXj"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            swal("Good job!", "We will contact you soon!", "success");
+            form.current.reset();
+          }
+        },
+        (error) => {
+          console.log(error.text);
+          if (error.text) {
+            swal("Good job!", `${error.text}`, "error");
+          }
+        }
+      );
   };
   return (
     <div
-      className='z-10 max-w-3xl mx-auto bg-[#147944] p-5 mt-10 rounded'
+      className='z-50 max-w-3xl mx-auto bg-[#147944] p-5 mt-10 rounded'
       data-aos='zoom-in'
       data-aos-easing='linear'
       data-aos-duration='1500'>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        ref={form}
+        onSubmit={sendEmail}
         className='grid lg:grid-cols-2 grid-cols-1 md:gap-5 gap-3'>
         <div className=''>
           <label htmlFor='name' className='text-white'>
@@ -23,10 +46,10 @@ const Form = () => {
           <input
             id='name'
             type='text'
+            name='user_name'
             placeholder='Your name'
             className='w-full rounded outline-none py-1 px-2'
             required
-            {...register("name")}
           />
         </div>
         <div className=''>
@@ -36,10 +59,10 @@ const Form = () => {
           <input
             id='email'
             type='email'
+            name='user_email'
             placeholder='Type your email address'
             className='w-full rounded outline-none py-1 px-2'
             required
-            {...register("email")}
           />
         </div>
         <div className=''>
@@ -49,10 +72,10 @@ const Form = () => {
           <input
             id='duration'
             type='number'
+            name='duration'
             placeholder='Type the duration'
             className='w-full rounded outline-none py-1 px-2'
             required
-            {...register("duration")}
           />
         </div>
         <div className=''>
@@ -62,10 +85,10 @@ const Form = () => {
           <input
             id='reward'
             type='text'
+            name='reward'
             placeholder='Type your reward'
             className='w-full rounded outline-none py-1 px-2'
             required
-            {...register("reward")}
           />
         </div>
         <div className='col-span-2'>
@@ -76,10 +99,10 @@ const Form = () => {
             id='challenge'
             rows='4'
             cols='50'
+            name='message'
             className='w-full rounded outline-none py-1 px-2'
             placeholder='Type the challenge'
             required
-            {...register("challenge")}
           />
         </div>
 
