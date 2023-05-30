@@ -31,7 +31,7 @@ const CompanySection = () => {
       ref={zoomOut}>
       <h2 className='uppercase font-black lg:text-7xl md:text-5xl sm:text-3xl text-xl tracking-widest titleOut'>challenge us</h2>
       <p
-        className='uppercase text-base sm:text-lg md:text-xl lg:text-3xl sm:font-extrabold font-medium tracking-widest'
+        className='uppercase text-xs sm:text-base md:text-lg lg:text-2xl sm:font-extrabold font-medium tracking-widest'
         data-aos='fade-up'
         data-aos-duration='10000'
         data-aos-anchor-placement='top-center'>

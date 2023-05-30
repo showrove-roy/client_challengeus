@@ -14,6 +14,7 @@ const HeroSection = () => {
         scale: 4,
         stagger: 0.25,
         duration: 5,
+        opacity: 0,
         scrollTrigger: {
           trigger: zoomIn.current,
           pin: true,

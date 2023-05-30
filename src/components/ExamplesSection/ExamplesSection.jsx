@@ -55,15 +55,15 @@ const ExamplesSection = () => {
       className='max-w-[1920px] mx-auto relative mt-24 mb-36 z-10 bg-white'
       ref={zoomOut}>
       {/* side img */}
-      <div className='absolute -top-40 left-0 w-1/3 -z-50 sideImg'>
+      <div className='absolute -top-40 left-0 lg:w-1/3 w-1/2 -z-50 sideImg'>
         <img className='w-full' src={sideimg} alt='' />
       </div>
       <div className='maxW overflow-x-hidden'>
-        <h3 className='uppercase text-7xl font-extrabold text-center tracking-widest titleX'>
+        <h3 className='uppercase lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold text-center tracking-widest titleX'>
           examples
         </h3>
 
-        <div className='mt-28 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 overflow-hidden'>
+        <div className='lg:mt-28 mt-5 grid justify-center gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 overflow-hidden'>
           {/* First Card */}
           <div
             className='flex flex-col items-center p-4 text-center'
@@ -71,20 +71,20 @@ const ExamplesSection = () => {
             data-aos-duration='500'
             data-aos-easing='ease-in-sine'>
             <div className='mb-5'>
-              <h5 className='my-3 text-3xl font-bold uppercase'>First:</h5>
-              <p className='capitalize text-xl font-semibold'>
+              <h5 className='my-3 lg:text-2xl md:text-xl sm:text-lg text-base font-bold uppercase'>First:</h5>
+              <p className='capitalize  md:text-base text-xs font-semibold'>
                 give us a challenge and set the duration.
               </p>
             </div>
             <div className='mb-5'>
-              <h5 className='my-3 text-3xl font-bold uppercase'>second:</h5>
-              <p className='capitalize text-xl font-semibold'>
+              <h5 className='my-3 lg:text-2xl md:text-xl sm:text-lg text-base font-bold uppercase'>second:</h5>
+              <p className='capitalize md:text-base text-xs font-semibold'>
                 choose the reward for the completed challenge.
               </p>
             </div>
             <div className='mb-5'>
-              <h5 className='my-3 text-3xl font-bold uppercase'>third:</h5>
-              <p className='capitalize text-xl font-semibold'>
+              <h5 className='my-3 lg:text-2xl md:text-xl sm:text-lg text-base font-bold uppercase'>third:</h5>
+              <p className='capitalize md:text-base text-xs font-semibold'>
                 let Gen-z-🌎 fascinate you
               </p>
             </div>
@@ -92,25 +92,25 @@ const ExamplesSection = () => {
 
           {/* second card */}
           <div
-            className='pageBg flex flex-col items-center justify-center p-4 text-center'
+            className='pageBg flex flex-col items-center justify-center p-10 text-center'
             data-aos='fade-up'
             data-aos-duration='500'
             data-aos-easing='ease-in-sine'>
             <div className='mb-2'>
-              <p className='uppercase font-semibold text-lg'>what</p>
-              <p className='uppercase font-semibold text-lg px-5'>
+              <p className='uppercase font-semibold md:text-base text-xs'>what</p>
+              <p className='uppercase font-semibold md:text-base text-xs px-5'>
                 make our product more appealing for gen z
               </p>
             </div>
             <div className='mb-2'>
-              <p className='uppercase font-semibold text-lg'>duration</p>
-              <p className='uppercase font-semibold text-lg'>
+              <p className='uppercase font-semibold md:text-base text-xs'>duration</p>
+              <p className='uppercase font-semibold md:text-base text-xs'>
                 can you do it in 2 weeks?
               </p>
             </div>
             <div className='mb-2'>
-              <p className='uppercase font-semibold text-lg'>awards</p>
-              <p className='uppercase font-semibold text-lg px-5'>
+              <p className='uppercase font-semibold md:text-base text-xs'>awards</p>
+              <p className='uppercase font-semibold md:text-base text-xs px-5'>
                 Free samples and one hour with our legal advisor
               </p>
             </div>
@@ -118,25 +118,25 @@ const ExamplesSection = () => {
 
           {/* Third Card */}
           <div
-            className='pageBg flex flex-col items-center justify-center p-4 text-center'
+            className='pageBg flex flex-col items-center justify-center p-10 text-center'
             data-aos='fade-left'
             data-aos-duration='500'
             data-aos-easing='ease-in-sine'>
             <div className='mb-2'>
-              <p className='uppercase font-semibold text-lg'>what</p>
-              <p className='uppercase font-semibold text-lg px-5'>
+              <p className='uppercase font-semibold md:text-base text-xs'>what</p>
+              <p className='uppercase font-semibold md:text-base text-xs px-5'>
                 design my new home (gen z style)
               </p>
             </div>
             <div className='mb-2'>
-              <p className='uppercase font-semibold text-lg'>duration</p>
-              <p className='uppercase font-semibold text-lg'>
+              <p className='uppercase font-semibold md:text-base text-xs'>duration</p>
+              <p className='uppercase font-semibold md:text-base text-xs'>
                 I give you 4 weeks
               </p>
             </div>
             <div className='mb-2'>
-              <p className='uppercase font-semibold text-lg'>awards</p>
-              <p className='uppercase font-semibold text-lg px-5'>
+              <p className='uppercase font-semibold md:text-base text-xs'>awards</p>
+              <p className='uppercase font-semibold md:text-base text-xs px-5'>
                 I can offer a professional photo shoot
               </p>
             </div>
