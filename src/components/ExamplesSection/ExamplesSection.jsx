@@ -14,6 +14,7 @@ const ExamplesSection = () => {
         scale: 100,
         stagger: 0.25,
         duration: 5,
+        opacity:0,
         scrollTrigger: {
           trigger: zoomOut.current,
           pin: true,

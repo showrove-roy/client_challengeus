@@ -14,6 +14,7 @@ const CompanySection = () => {
         scale: 100,
         stagger: 0.25,
         duration: 3,
+        opacity: 0,
         scrollTrigger: {
           trigger: zoomOut.current,
           pin: true,
@@ -26,11 +27,11 @@ const CompanySection = () => {
   }, []);
   return (
     <section
-      className='maxW h-screen flex items-center justify-center flex-col font-black text-8xl tracking-widest overflow-hidden -z-10'
+      className='maxW h-screen flex items-center justify-center flex-col overflow-hidden -z-10'
       ref={zoomOut}>
-      <h2 className='uppercase titleOut'>challenge us</h2>
+      <h2 className='uppercase font-black lg:text-7xl md:text-5xl sm:text-3xl text-xl tracking-widest titleOut'>challenge us</h2>
       <p
-        className='uppercase text-3xl font-extrabold tracking-widest'
+        className='uppercase text-base sm:text-lg md:text-xl lg:text-3xl sm:font-extrabold font-medium tracking-widest'
         data-aos='fade-up'
         data-aos-duration='10000'
         data-aos-anchor-placement='top-center'>
