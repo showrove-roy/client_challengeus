@@ -19,7 +19,7 @@ const FormSection = () => {
         opacity:0,
         scrollTrigger: {
           trigger: zoomOut.current,
-          pin: titleOut,
+          pin: zoomOut.current,
           start :"top 10%", 
           end: `+=${innerHeight * 1.2}`,
           scrub: 2,
@@ -31,29 +31,29 @@ const FormSection = () => {
   return (
     <section className='relative overflow-hidden pt-20 pb-28' ref={zoomOut}>
       <img
-        className='absolute -z-10 rotate-[135deg] -top-[12%] -left-[17%] max-w-3xl'
+        className='absolute -z-10 rotate-[135deg] -top-[12%] lg:-left-[17%] md:-left-[25%] sm:-left-[30%] -left-[60%] max-w-3xl'
         src={sideimg2}
         alt=''
       />
       <img
-        className='absolute -z-10 rotate-[35deg] -bottom-[12%] -left-[17%] max-w-3xl'
+        className='absolute -z-10 rotate-[35deg] -bottom-[12%] -lg:-left-[17%] md:-left-[25%] sm:-left-[30%] -left-[60%] max-w-3xl'
         src={sideimg2}
         alt=''
       />
       <img
-        className='absolute -z-10 rotate-[230deg] -top-[12%] -right-[17%] max-w-3xl'
+        className='absolute -z-10 rotate-[230deg] -top-[12%] -lg:-right-[17%] md:-right-[25%] sm:-right-[30%] -right-[60%] max-w-3xl'
         src={sideimg2}
         alt=''
       />
       <img
-        className='absolute -z-10 rotate-[325deg] -bottom-[12%] -right-[17%] max-w-3xl'
+        className='absolute -z-10 rotate-[325deg] -bottom-[12%] -lg:-right-[17%] md:-right-[25%] sm:-right-[30%] -right-[60%] max-w-3xl'
         src={sideimg2}
         alt=''
       />
 
       <div className='maxW '>
         <h3
-          className='uppercase text-7xl font-extrabold text-center tracking-widest titleOut'>
+          className='uppercase lg:text-7xl md:text-5xl sm:text-3xl text-xl font-extrabold text-center tracking-widest titleOut'>
           the <br /> challenge
         </h3>
 

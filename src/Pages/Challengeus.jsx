@@ -27,9 +27,9 @@ const Challengeus = () => {
       {/* Form Section */}
       <FormSection />
 
-      <div className='mt-40 mb-20 flex justify-center items-center gap-10'>
+      <div className='lg:mt-40 md:mt-32 sm:mt-20 mt-16 mb-20 flex flex-col md:flex-row justify-center items-center lg:gap-10 md:8 sm:gap-5 gap-2'>
         <div className='' data-aos='fade-right' data-aos-duration='500'>
-          <p className='text-3xl font-semibold'>Imprint & Privacy Policy</p>
+          <p className='lg:text-xl md:text-lg sm:text-base text-xs font-semibold'>Imprint & Privacy Policy</p>
         </div>
         <span
           className='text-5xl'
@@ -41,8 +41,8 @@ const Challengeus = () => {
           className='flex items-center gap-3'
           data-aos='fade-left'
           data-aos-duration='500'>
-          <img src={tiktok_icon} alt='' />
-          <p className='text-3xl font-semibold'>u.challenge.us</p>
+          <img src={tiktok_icon} alt='' className="lg:w-full sm:w-16 w-10" />
+          <p className='lg:text-xl md:text-lg sm:text-base text-xs font-semibold'>u.challenge.us</p>
         </div>
       </div>
 

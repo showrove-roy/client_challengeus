@@ -29,34 +29,34 @@ const ImprintSection = () => {
   return (
     <section className='maxW py-20 overflow-hidden -z-20' ref={zoomOut}>
       <h3
-        className='uppercase text-7xl font-extrabold text-center tracking-widest titleOut'
+        className='uppercase lg:text-7xl md:text-5xl sm:text-3xl text-xl font-extrabold text-center tracking-widest titleOut'
         >
         imprint
       </h3>
 
       <p
-        className='text-center font-medium'
+        className='text-center font-medium text-xs md:text-sm lg:text-base'
         data-aos='fade-up'
         data-aos-duration='600'
         data-aos-easing='ease-in-sine'>
         Verantwortlich für den Inhalt:
       </p>
       <p
-        className='text-center font-medium'
+        className='text-center font-medium text-xs md:text-sm lg:text-base'
         data-aos='fade-up'
         data-aos-duration='700'
         data-aos-easing='ease-in-sine'>
         Nour Idelbi mendelstraße 11 48149 Münster Deutschland
       </p>
       <p
-        className='text-center font-medium'
+        className='text-center font-medium text-xs md:text-sm lg:text-base'
         data-aos='fade-up'
         data-aos-duration='800'
         data-aos-easing='ease-in-sine'>
         Kontakt:
       </p>
       <p
-        className='text-center font-medium'
+        className='text-center font-medium text-xs md:text-sm lg:text-base'
         data-aos='fade-up'
         data-aos-duration='900'
         data-aos-easing='ease-in-sine'>
@@ -65,7 +65,7 @@ const ImprintSection = () => {
 
       <div className='max-w-5xl mx-auto shadow-lg p-5 rounded my-5'>
         <p
-          className='text-center mb-5 text-2xl font-bold'
+          className='text-center mb-5 text-sm md:text-base lg:text-xl font-bold'
           data-aos='fade-up'
           data-aos-duration='1000'
           data-aos-easing='ease-in-sine'>
@@ -78,10 +78,10 @@ const ImprintSection = () => {
               className='rounded'
               data-aos='zoom-out-right'
               data-aos-duration='500'>
-              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-lg font-semibold'>
+              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-xs md:text-sm lg:text-base font-semibold'>
                 Inhalt des Onlineangebots
               </summary>
-              <p className='pt-1 pb-3 px-4 bg-slate-200'>
+              <p className='pt-1 pb-3 px-4 bg-slate-200 tracking-widest leading-5 text-[8px] md:text-sm lg:text-base'>
                 Der Inhalt dieser Website wurde mit größtmöglicher Sorgfalt
                 erstellt. Trotzdem kann keine Gewähr für die Aktualität,
                 Richtigkeit und Vollständigkeit der bereitgestellten
@@ -99,10 +99,10 @@ const ImprintSection = () => {
               className='rounded'
               data-aos='zoom-out-right'
               data-aos-duration='700'>
-              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-lg font-semibold'>
+              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-xs md:text-sm lg:text-base font-semibold'>
                 Verweise und Links
               </summary>
-              <p className='pt-1 pb-3 px-4 bg-slate-200'>
+              <p className='pt-1 pb-3 px-4 bg-slate-200 tracking-widest leading-5 text-[8px] md:text-sm lg:text-base'>
                 Diese Website enthält Verweise auf externe Websites
                 ("Hyperlinks"), auf deren Inhalt der Autor keinen Einfluss hat.
                 Für die Inhalte der verlinkten Seiten ist stets der jeweilige
@@ -119,10 +119,10 @@ const ImprintSection = () => {
               className='rounded'
               data-aos='zoom-out-right'
               data-aos-duration='900'>
-              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-lg font-semibold'>
+              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-xs md:text-sm lg:text-base font-semibold'>
                 Urheberrecht
               </summary>
-              <p className='pt-1 pb-3 px-4 bg-slate-200'>
+              <p className='pt-1 pb-3 px-4 bg-slate-200 tracking-widest leading-5 text-[8px] md:text-sm lg:text-base'>
                 Die auf dieser Website veröffentlichten Inhalte und Werke
                 unterliegen dem deutschen Urheberrecht. Jede vom deutschen
                 Urheberrecht nicht zugelassene Verwertung bedarf der vorherigen
@@ -144,10 +144,10 @@ const ImprintSection = () => {
               className='rounded'
               data-aos='zoom-out-left'
               data-aos-duration='500'>
-              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-lg font-semibold'>
+              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-xs md:text-sm lg:text-base font-semibold'>
                 Datenschutz
               </summary>
-              <p className='pt-1 pb-3 px-4 bg-slate-200'>
+              <p className='pt-1 pb-3 px-4 bg-slate-200 tracking-widest leading-5 text-[8px] md:text-sm lg:text-base'>
                 Die Nutzung dieser Website ist in der Regel ohne Angabe
                 personenbezogener Daten möglich. Soweit auf dieser Website
                 personenbezogene Daten (beispielsweise Name, Anschrift oder
@@ -165,10 +165,10 @@ const ImprintSection = () => {
               className='rounded'
               data-aos='zoom-out-left'
               data-aos-duration='700'>
-              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-lg font-semibold'>
+              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-xs md:text-sm lg:text-base font-semibold'>
                 Rechtswirksamkeit dieses Haftungsausschlusses
               </summary>
-              <p className='pt-1 pb-3 px-4 bg-slate-200'>
+              <p className='pt-1 pb-3 px-4 bg-slate-200 tracking-widest leading-5 text-[8px] md:text-sm lg:text-base'>
                 Dieser Haftungsausschluss ist als Teil des Internetangebots zu
                 betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern
                 Teile oder einzelne Formulierungen dieses Textes der geltenden
@@ -182,10 +182,10 @@ const ImprintSection = () => {
               className='rounded'
               data-aos='zoom-out-left'
               data-aos-duration='900'>
-              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-lg font-semibold'>
+              <summary className='question py-3 px-4 cursor-pointer select-none w-full bg-[#14794546] text-xs md:text-sm lg:text-base font-semibold'>
                 Streitbeilegung
               </summary>
-              <p className='pt-1 pb-3 px-4 bg-slate-200'>
+              <p className='pt-1 pb-3 px-4 bg-slate-200 tracking-widest leading-5 text-[8px] md:text-sm lg:text-base'>
                 Die Europäische Kommission stellt eine Plattform zur
                 Online-Streitbeilegung (OS) bereit, die Sie unter
                 https://ec.europa.eu/consumers/odr finden. Wir sind nicht bereit
