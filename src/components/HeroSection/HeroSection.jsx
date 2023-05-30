@@ -41,7 +41,7 @@ const HeroSection = () => {
     <section
       className='heroBg h-screen flex justify-center items-center overflow-hidden z-50'
       ref={zoomIn}>
-      <h1 className='text-white text-7xl font-extrabold uppercase tracking-widest	text-center titleIn'>
+      <h1 className='text-white lg:text-7xl md:text-5xl sm:text-3xl text-2xl font-extrabold uppercase tracking-widest	text-center titleIn'>
         Dare to
         <br />
         explore
