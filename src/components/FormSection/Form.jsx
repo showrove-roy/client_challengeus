@@ -9,22 +9,22 @@ const Form = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_tiujudf",
+        "template_v459ska",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "6bd9N-8dNRRBe-JeS"
       )
       .then(
         (result) => {
           if (result.text === "OK") {
-            swal("Good job!", "We will contact you soon!", "success");
+            swal("Thank You!", "We will contact you soon!", "success");
             form.current.reset();
           }
         },
         (error) => {
           console.log(error.text);
           if (error.text) {
-            swal("Good job!", `${error.text}`, "error");
+            swal("You Got an Error", `${error.text}`, "error");
           }
         }
       );
