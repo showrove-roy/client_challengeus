@@ -109,9 +109,9 @@ const ExamplesSection = () => {
               </p>
             </div>
             <div className='mb-2'>
-              <p className='uppercase font-semibold md:text-base text-xs'>awards</p>
+              <p className='uppercase font-semibold md:text-base text-xs'>Reward</p>
               <p className='uppercase font-semibold md:text-base text-xs px-5'>
-                Free samples and one hour with our legal advisor
+                Free samples and Free Sessions with our legal advisors
               </p>
             </div>
           </div>
@@ -135,9 +135,9 @@ const ExamplesSection = () => {
               </p>
             </div>
             <div className='mb-2'>
-              <p className='uppercase font-semibold md:text-base text-xs'>awards</p>
+              <p className='uppercase font-semibold md:text-base text-xs'>Reward</p>
               <p className='uppercase font-semibold md:text-base text-xs px-5'>
-                I can offer a professional photo shoot
+                I can offer a professional photo-shooting
               </p>
             </div>
           </div>
